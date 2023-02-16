@@ -17,9 +17,9 @@ def process_images(image_files):
         img = cv2.imdecode(np.frombuffer(image_file.read(), np.uint8), cv2.IMREAD_COLOR)
         # # Run OCR on the processed image
 
-        path = os.environ['tesseract_path']
+        #path = os.environ['tesseract_path']
 
-        pytesseract.pytesseract.tesseract_cmd = r'{}\tesseract.exe'.format(path)
+        #pytesseract.pytesseract.tesseract_cmd = r'{}\tesseract.exe'.format(path)
 
 
         # Resimdeki metinleri algıla
